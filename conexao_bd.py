@@ -2,17 +2,17 @@ import pymysql
 
 con = pymysql.connect(
     host='localhost',
-    user='root',
-    passwd='senha',
-    database='usuario'
+    user='***',
+    passwd='***',
+    database='***'
 )
 cursor = con.cursor()
 '''
 Criar tabela
-cursor.execute("create table st_user(cpf int(11),"
+cursor.execute("create table st_user(cpf varchar(255),"
                "nome varchar(255),"
                "sobrenome varchar(255),"
-               "idade int(3),"
+               "idade varchar(255),"
                "primary key(cpf))")
 '''
 
